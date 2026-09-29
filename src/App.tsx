@@ -1,6 +1,7 @@
 import { type FormEvent, useState } from 'react'
 import './App.css'
 import emailjs from '@emailjs/browser'
+import cvAdama from './assets/cv_adama_diakhate_developpeuse_frontend.pdf'
 
 const navItems = [
   ["Accueil", "accueil"],
@@ -36,8 +37,8 @@ const services = [
 ];
 
 const socialLinks = {
-  github: "https://github.com/",
-  linkedin: "https://www.linkedin.com/",
+  github: "https://github.com/adama199",
+  linkedin: "https://www.linkedin.com/in/adama-diakhate",
 };
 
 function Arrow() {
@@ -201,7 +202,7 @@ export default function App() {
                   <div key={item} className="flex items-center gap-2 text-sm font-bold"><i className="check">✓</i>{item}</div>
                 ))}
               </div>
-              <a href="assets/cv_adama_diakhate_developpeuse_frontend.pdf" download={'cv_adama_diakhate_developpeuse_frontend.pdf'} className="button-secondary mt-9">Télécharger mon CV <span aria-hidden="true">↓</span></a>
+              <a href={cvAdama} download={'cv_adama_diakhate_developpeuse_frontend.pdf'} className="button-secondary mt-9">Télécharger mon CV <span aria-hidden="true">↓</span></a>
             </div>
           </div>
         </section>
